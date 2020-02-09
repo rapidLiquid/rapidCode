@@ -7,14 +7,14 @@ why does this happen, because people sell short. They underestimate themselves. 
 When I have decided that I will earn Crores per annum, then I am a fool, I am going to do nothing, u see the goals we decide must be first of all realistic.
 
 Now the problem comes up later. suppose I start earning 10LPA then what, I chilll bitch, my only aim was to earn 10LPA or become an expert and all my learning stops, I am useless now. So i invented an ALGO.
-
+<pre><code>
 step 1: set realistic goals
 step 2: find ur peers
 step 3: make a telegram grp
 step 4: document what u r going to do and time box it.
 step 5: when times up write what u did and how u did it
 step 6: repeat from step 4 until u die
-
+</code></pre>
 ## ADVANTAGES
 1. U document everything, so u have a kind of feedback loop.
 2. U waste small amount of time, I try to complete everything I wrote in the desired amount of time and most of the time, I finish it quickly and hence save time.
