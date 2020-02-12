@@ -30,3 +30,24 @@ there are many more benefits of this algorithm but these are the primary ones.
 
 remember, live each day as if you might die the next day, dont fear death , its inevitable
 but think what u can discover today that will make your life worth living and be grateful that u r alive and thinking all the time.
+
+# MY GOALS
+
+Although we shouldn't discuss about our goals, but I will because I believe in them with all my heart and I will keep on updating here regarding them.
+
+1. BECOME A CANDIDATE MASTER / MASTER at CODEFORCES
+  This is a college dream of mine and its something that is pending by my side for a long time now, this will prove my competency at comp coding.
+
+2. INSPIRE / MOTIVATE OTHERS
+  One of my best friends commited suicide and  I won't let it go in vain, I plan to design and implement an automated question answering framework to collect data from the net and based on the problems users are facing, suggest them the right solution and also this would host different philosiphical ideas, inspirational stories of individuals etc to motivate them and tell them how beatiful and awesome life is.
+
+3. BECOME PRO HASKELLER
+  Once u get a taste of functional programming, u automatically want to become best at it because its elegant, mathematical and beautiful. I intend to do The same.
+
+4. BECOME BETTER AT SYSTEM DESIGN
+  System design is an important aspect for excelling at ur career or starting ur own scalable company, I intend to become better at it just to understand the elegance of it. Need to understand various aspects like async programming, scheduling , streaming and processing of data , also storage etc for quick retrieval.
+
+5. UNDERSTAND COMMON NLP / INDEXING AND RANKING
+  I thought that to implement #2 , i needed ML but its not the case for the beginning phase, just basic algos will do the trick , given that the data is cleaned and processed into some usable format.
+
+#4 and # 5 are side tasks, they will be done in the process of doing first 3 which are of primary importance, I plan to do The first and third this year and a skeleton model for the third, I will keep on updating, as i keep on progressing
