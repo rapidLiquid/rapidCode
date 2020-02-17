@@ -25,15 +25,15 @@
 6. Unique BST 2
 8. Word break 2
 
-## DP
+## Practice
 
-1. Regular expression match 			-> PD(MLE)
+1. Regular expression match 			-> TD(MLE, how to optimise)
 2. palindrome partitioning 2			-> D
 3. word break					-> D
 4. evaluate expr to true
 5. distinct subsequences
 6. shortest common supersequence
-7. Distinct subsequences			-> PD(think about a new soln)
+7. Distinct subsequences			-> TD(think about a new soln, and why old failed)
 8. dungeon princess
 9. min sum path in triangle
 10. coin sum infinite
@@ -42,6 +42,7 @@
 13. equal avg partition
 14. N digit number with digit sum s
 15. interleaving strings
+16. pair of poles				-> PD(do & prove using stack)
 
 ## Extra Concepts
 
