@@ -27,13 +27,13 @@
 
 ## DP
 
-1. Regular expression match
-2. palindrome partitioning 2
-3. word break
+1. Regular expression match 			-> PD(MLE)
+2. palindrome partitioning 2			-> D
+3. word break					-> D
 4. evaluate expr to true
 5. distinct subsequences
 6. shortest common supersequence
-7. Distinct subsequences
+7. Distinct subsequences			-> PD(think about a new soln)
 8. dungeon princess
 9. min sum path in triangle
 10. coin sum infinite
@@ -52,7 +52,7 @@
 
 ## Haskell
 
-1. ch 10
+1. ch 10					-> PD(read once)
 2. ch 11 
 3. ch 12
 4. ch 15
@@ -60,7 +60,7 @@
 6. ch 17
 7. ch 18
 8. 10 / 99 problems
-9. text from tags
+9. text from tags grimble
 
 ## System Design
 
