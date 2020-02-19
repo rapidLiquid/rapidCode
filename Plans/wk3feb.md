@@ -30,17 +30,17 @@
 1. Regular expression match 			-> TD(MLE, how to optimise)
 2. palindrome partitioning 2			-> D
 3. word break					-> D
-4. evaluate expr to true
-5. distinct subsequences
+4. evaluate expr to true			-> D
+5. distinct subsequences			-> D
 6. shortest common supersequence
-7. Distinct subsequences			-> TD(think about a new soln, and why old failed)
-8. dungeon princess
+7. Distinct subsequence				-> TD(think about a new soln, and why old failed)
+8. dungeon princess				-> D
 9. min sum path in triangle
 10. coin sum infinite
 11. 4 sub-sequences
-12. best time to buy and sell stocks
+12. best time to buy and sell stocks		-> D
 13. equal avg partition
-14. N digit number with digit sum s
+14. N digit number with digit sum s		-> D
 15. interleaving strings
 16. pair of poles				-> PD(do & prove using stack)
 

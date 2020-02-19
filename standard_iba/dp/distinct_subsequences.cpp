@@ -20,12 +20,13 @@ int Solution::numDistinct(string A, string B) {
         if(A[i] == B[0]) dp[i][0] = 1;
         if(i > 0) dp[i][0] += dp[i-1][0];
     }
+    // any position can associate with the first B position
 
     // for(int i = 0; i < m; ++i) {
     //     if(B[i] == A[0]) dp[0][i] = 1;
     //     else if(i > 0) dp[0][i] += dp[0][i-1];
     // } // this doesn't work why becoz length is fixed -> 1 of the second string
-
+    // cool ,so avoid this
 
     for(int i = 1; i < n; ++i)
         for(int j = 1; j < m; ++j)
