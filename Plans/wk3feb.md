@@ -39,7 +39,7 @@
 10. coin sum infinite
 11. 4 sub-sequences
 12. best time to buy and sell stocks		-> D
-13. equal avg partition
+13. equal avg partition				-> D
 14. N digit number with digit sum s		-> D
 15. interleaving strings
 16. pair of poles				-> PD(do & prove using stack)
@@ -62,6 +62,14 @@
 7. ch 18
 8. 10 / 99 problems
 9. text from tags grimble
+10. Ch 9 LYH
+11. ch 10 LYH
+12. ch 11 LYH
+13. ch 12 LYH
+14. ch 13 LYH
+15. ch 14 LYH
+16. ch 8 LYH
+17. ch 7 LYH
 
 ## System Design
 
