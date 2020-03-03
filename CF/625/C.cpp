@@ -37,3 +37,19 @@ int main(int argc, char const *argv[])
 
 	return 0;
 }
+
+
+
+/**
+ *
+ * proof - why does this work
+ * we choose the highest character that can be removed
+ * we can remove the highest char without any worry
+ * becoz it has no dependencies
+ * BUT
+ * it might happen that multiple highest char depend
+ * on the same lower character 
+ * like abbbb
+ * here all the b's depend on the single a
+ *
+ */ 
