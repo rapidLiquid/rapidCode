@@ -12,3 +12,4 @@ important topics.
 7. wrting effectful code
 8. practice from hackerrank
 9. read mvanier blog
+10. book of monads lectures
