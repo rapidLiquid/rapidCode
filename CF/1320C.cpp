@@ -53,7 +53,7 @@ void _push(vi& T,vi& L,int i) {
 	if(L[i] > INT_MIN) T[i] += L[i];
 	if((i<<1) < ts) {
 		if(L[i<<1]>INT_MIN&&L[i] > INT_MIN)L[i<<1] += L[i];
-		else if(L[i<<1] == INT_MIN) L[i<<1] = L[i];
+		else if(L[i<<1] == INT_MIN) L[i<<1] = L[i]; // very imp, why ??
 	}
 	if((1+(i<<1)) < ts) {
 		if(L[1+(i<<1)]>INT_MIN&&L[i] > INT_MIN)L[1+(i<<1)] += L[i];
@@ -133,8 +133,8 @@ int main(int argc, char const *argv[])
 		// cout << arr[i] << " ar1 ar2 " << arr2[i] << endl;
 	}
 
-	tree = vi (5*m);
-	lazy = vi (5*m,INT_MIN);
+	tree = vi (4*m);
+	lazy = vi (4*m,INT_MIN);
 	_build(tree,arr,1,0,m-1);
 
 	int midx = 0;
@@ -160,3 +160,69 @@ int main(int argc, char const *argv[])
 
 	return 0;
 }
+
+
+/*
+EXPLANATION
+
+we have list of Ai and CAi
+we have list of Bi and CBi
+
+we have list of Xj,Yj,Zj
+
+
+we need to select an Ai and a Bj
+s.t. the profit is max
+
+approach
+
+fix an Ai
+
+for each Ai
+
+profit(i) = -A[i] - B[j] + 
+	( sum of only those Z[k] (where X[k] < A[i]) s.t. B[j] > Y[k] )
+in a way we are fixing the monsters by fixing the A[i]
+but still we need to take care of the other parameter
+we can simply update
+if a moster has some attack Y then we can add the profit
+to all the defense values greater than Y, for which we construct a segment tree
+we are adding it in a range simply
+
+int k = 0;
+fr(i,0,n) {
+	// n A's
+	for(; mons[k].X < A[i]; ++k) {
+		// now we know for sure that the defense of these monster
+		// is less than the selected attack
+		// all of them have certain attacks
+		// we need to now update the defense
+		// simply these profits will be added to those defense
+		// which is higher than selected attack
+		// why we do this since we can pick any defense modifier
+		// after doing this , pick the defense modifier
+		// with the highest profit
+
+		update for all profit higher than the current
+		because had we selected that armor
+		we would have survived the attack and got the profit
+
+	}
+
+}
+
+
+in simple terms, we need to fix the attack
+and now one by one just update all the higher defenses
+because picking those defenses would give us the current profit
+
+in general , these are segment tree problems
+come up with a general formula or approach and fix a param
+like start from the lowest or the highest and update all the ranges
+
+
+*/
+
+
+
+
