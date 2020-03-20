@@ -100,7 +100,7 @@ void _upd(vi& tree, vi& lazy, int val, int idx,int l, int r,int s,int e) {
 
 */
 
-const int MX = 1e6+7;
+const INT MX = 1e6+7;
 // vi tree;
 // vi lazy;
 
@@ -124,7 +124,7 @@ int main(int argc, char const *argv[])
 	// lazy = vi (3*MX,INT_MIN);
 
 	vi arr({1,2,3,4,5,6,7,8});
-	int n = (int)arr.size();
+	int n = (int)arr.size()
 	vi tree(3*n);
 	vi lazy(3*n);
 	_build(tree,arr,1,0,n-1);
