@@ -33,34 +33,34 @@ const LL INF = 9e18 + 2e17;
 const int inf = 2e9;
 const double eps = 1e-10;
  // START FROM HERE
-
+// never use puts ??? 
 int main(int argc, char const *argv[])
 {
 	fastio;
 
-	// t_times {
-	// 	int n; cin >> n;
-
-	// 	if(n == 1) puts("-1");
-	// 	else {
-	// 		string s = "";
-	// 		fr(i,0,n-1) s+='3';
-	// 		s+='8';
-	// 		cout << s << endl;
-	// 	}
-
-	// }
-	int t;cin >> t;
-	while(t--) {
+	t_times {
 		int n; cin >> n;
-		if(n == 1) puts("-1");
+
+		if(n == 1) cout << "-1\n";
 		else {
 			string s = "";
 			fr(i,0,n-1) s+='3';
 			s+='8';
 			cout << s << endl;
 		}
+
 	}
+	// int t;cin >> t;
+	// while(t--) {
+	// 	int n; cin >> n;
+	// 	if(n == 1) cout << "-1\n";
+	// 	else {
+	// 		string s = "";
+	// 		fr(i,0,n-1) s+='3';
+	// 		s+='8';
+	// 		cout << s << endl;
+	// 	}
+	// }
 
 
 	
