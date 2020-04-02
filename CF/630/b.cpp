@@ -28,62 +28,46 @@ const double eps = 1e-10;
  // START FROM HERE
 
 
-vi _si(int n) {
- vi pr(n+1,1);
- pr[0] = pr[1] = 0;
- fr(i,2,n+1) {
-  if (!pr[i]) continue;
-  for(int j = 2*i; j < n+1; j+=i)
-   pr[j] = 0;
- }
- vi res;
- fr(i,0,n+1) if(pr[i]) res.pb(i);
- return res;
-}
+/*
+
+TO be noted that the max value of number can be 1000
+what does this mean
+sqrt(1000) is around 31
+
+primes till 31
+
+2 3 5 7 11 13 17 19 23 29 31
+
+only 11 primes are there
+
+what does it mean , that the lowest prime divisor/divisor of the number
+will be one of these primes because if the lowest is greater than these then 
+the number will be > 1000
+i was confused because i thought that what if 101 or some other prime is given
+*/
 
 
 int main(int argc, char const *argv[])
 {
- fastio;
- 
- t_times {
-  int n;cin >> n;
-  vi a(n);
-  fr(i,0,n)cin>>a[i];
-
-  vi ans(n,0);
   
-  int color=0;
-  vi till[13];
-  sort(all(a));
-  till[color].pb(0);
+  vi pr({2, 3 ,5 ,7, 11, 13, 17, 19 ,23 ,29 ,31});
+  t_times {
+    int n ;
+    cin >> n ;
 
-
-  fr(i,1,n) {
-  	int flag2=0;
-  	fr(j,0,color+1) {
-  		int flag = 1;
-  		fr(k,0,(int)till[j].size()) {
-  			if(__gcd(a[till[j][k]],a[i])==1){
-  				flag=0;break;
-  			}
-  		}
-  		if(flag){till[j].pb(i);flag2=1;break;}
-  	}
-  	if(!flag2){
-  		++color;
-  		till[color].pb(i);
-  	}
-
+    // vi a(n);
+    vi ans(n);
+    map<int,int>m; int idx=0;
+    fr(i,0,n){
+      int x; cin >> x;
+      fr(j,0,11) if(x%pr[j]==0) ans[i]=j+1;
+      if(!m.count(ans[i]))m[ans[i]]=++idx;
+    }//any nmber taken, need to take the smallest number , compress the numbers
+    cout << idx << endl;
+    fr(i,0,n)cout << m[ans[i]] << " ";
+    cout << endl;
 
   }
-  fr(c,0,color+1){
-  	for(int i : till[c]) ans[i]=c+1;
-  }
-  cout << color+1 << endl;
-  for(int i : ans)cout << i << " ";
-  	cout << endl;
 
- }
- return 0;
+  return 0;
 }
