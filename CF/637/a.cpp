@@ -35,7 +35,21 @@ int main(int argc, char const *argv[])
 {
 	fastio;
 	
+	t_times {
+		int n, a, b, c, d;
+		cin >> n >> a >> b >> c >> d;
+		int mn = (a-b)*n;
+		int mx = (a+b)*n;
+		// int from = (c - d)/n, to = (c + d)/n;
+		
+		if(mn>=(c-d)&&mn<=(c+d)) cout << "Yes";
+		else if(mx>=(c-d)&&mx<=(c+d)) cout << "Yes";
+		else if(mn<(c-d)&&mx>(c+d))cout<<"Yes";
+		else cout << "No";
+		cout <<endl;
 
+
+	}
 
 
 	return 0;

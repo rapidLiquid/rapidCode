@@ -35,7 +35,10 @@ int main(int argc, char const *argv[])
 {
 	fastio;
 	
-
+	t_times {
+		int n; cin >> n;
+		cout << n - ((n+2)/2) << endl;
+	}
 
 
 	return 0;

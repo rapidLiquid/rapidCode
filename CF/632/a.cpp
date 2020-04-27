@@ -4,9 +4,13 @@ using namespace std;
  
 #define fastio ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
 #define t_times int t; cin >> t; while(t--)
+#define _parr(a, n) for(int __i = 0; __i < (int )n; __i++) cout << a[__i] << ' '; cout << '\n'
 #define fr(i, st, n) for(int i = (int )st; i < (int )n; i++)
+#define frn(i, st, n) for(int i = (int )st; i <= (int )n; i++)
 #define rev(i, en, st) for(int i = (int )en; i >= (int )st; i--)
 #define all(c) (c).begin(), (c).end()
+#define rall(c) (c).begin(), (c).end()
+#define mp make_pair
 #define F first
 #define S second
 #define pb push_back
@@ -17,13 +21,7 @@ typedef unsigned long long ULL;
 typedef unsigned int uint;
 typedef pair< int, int> ii;
 typedef vector< int> vi;
-typedef vector< ii> vii;
 typedef vector< vi> vvi;
-
-typedef pair< LL, LL> ll;
-typedef vector< LL> vl;
-typedef vector< ll> vll;
-typedef vector< vl> vvl;
  
 const int mod = 1e9 + 7;
 const LL INF = 9e18 + 2e17;

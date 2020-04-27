@@ -36,7 +36,29 @@ int main(int argc, char const *argv[])
 	fastio;
 	
 
-
+	t_times {
+		int n;cin >> n;
+		vi pos(n+1,0);
+		set<int>valid;
+		fr(i,0,n){
+			int x; cin>>x;
+			pos[x]=i+1;
+			valid.insert(i+1);
+		}
+		bool poss = true;
+		fr(i,1,n+1){
+			if(i>1) {
+				int curr = pos[i-1]+1;
+				if(valid.find(curr)!=valid.end()) {
+					if(pos[i]!=curr) poss = false;
+				}
+			}
+			valid.erase(pos[i]);
+		}
+		if(poss) cout << "Yes";
+		else cout << "No";
+		cout << endl;
+	}
 
 	return 0;
 }

@@ -35,7 +35,16 @@ int main(int argc, char const *argv[])
 {
 	fastio;
 	
+	t_times {
+		int n, a, b;
+		cin >> n >> a >> b;
 
+		string ans = "";
+		fr(i,0,b) ans += (i+'a');
+		fr(i,0,a-b) ans += ans[b-1];
+		fr(i,a,n) ans += ans[i-a];
+		cout << ans << endl;
+	}
 
 
 	return 0;

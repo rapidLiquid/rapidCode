@@ -31,11 +31,33 @@ const int inf = 2e9;
 const double eps = 1e-10;
  // START FROM HERE
 
+char inc(char x) {
+	int d = x-'0';
+	d++;
+	if(d==10)d=1;
+	return (char)(d+'0');
+}
 int main(int argc, char const *argv[])
 {
 	fastio;
 	
-
+	t_times {
+		string s[9];
+		fr(i,0,9)cin>>s[i];
+		s[0][0] = inc(s[0][0]);
+		s[1][3] = inc(s[1][3]);
+		s[2][6] = inc(s[2][6]);
+		
+		s[3][1] = inc(s[3][1]);
+		s[4][4] = inc(s[4][4]);
+		s[5][7] = inc(s[5][7]);
+		
+		s[6][2] = inc(s[6][2]);
+		s[7][5] = inc(s[7][5]);
+		s[8][8] = inc(s[8][8]);
+		// cout << endl;
+		fr(i,0,9)cout<<s[i]<<endl;
+	}
 
 
 	return 0;

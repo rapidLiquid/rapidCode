@@ -35,7 +35,25 @@ int main(int argc, char const *argv[])
 {
 	fastio;
 	
+	t_times {
+		int n;cin >> n;
+		vi a(n+10,0);
+		set<int>S;
+		fr(i,0,n){
+			int x;cin>>x;
+			a[x]++;
+			S.insert(x);
+		}
+		int mx=0;
+		fr(i,0,n+10) {
+			if(a[i]>mx) mx=a[i];
+		}
+		int ans = S.size();
+		if(mx == ans) cout << ans - 1 << endl;
+		else if(mx > ans) cout << ans << endl;
+		else cout << mx << endl; // (mx < ans)
 
+	}
 
 
 	return 0;

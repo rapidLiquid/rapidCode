@@ -35,7 +35,24 @@ int main(int argc, char const *argv[])
 {
 	fastio;
 	
-
+	t_times {
+		int n, k; cin >> n >> k;
+		vi h(n);
+		fr(i,0,n)cin>>h[i];
+		int peak = 0;int mx = 0;
+		int idx = 0;
+		fr(i,1,k-1) if(h[i]>h[i-1] &&h[i]>h[i+1]) ++peak;
+		mx=peak;
+		fr(i,k,n) {
+			if(h[i-1]>h[i-2]&&h[i-1]>h[i])++peak;
+			if(h[i-k+1]>h[i-k]&&h[i-k+1]>h[i-k+2])--peak;
+			if(peak>mx){
+				idx=i-k+1;
+				mx=peak;
+			}
+		}
+		cout << mx+1 << " " << idx + 1 << endl;
+	}
 
 
 	return 0;
