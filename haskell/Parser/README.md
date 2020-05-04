@@ -23,4 +23,6 @@
 
 11. Haskell data is immutable. Once you construct a data item, it will forever stay the same
 
-12. 
+12. a new way to think about IO () , simply an action that needs to be called
+
+13. 
