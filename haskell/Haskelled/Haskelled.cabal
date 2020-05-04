@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: ed81682ac4daabb46663de905b07679cdf29495514ab3d044620be7fe7f0d588
+-- hash: 64b2b749201e43cabede59e38abd6cbdefd1d06c98adae63fe2038252cb23f96
 
 name:           Haskelled
 version:        0.1.0.0
@@ -29,7 +29,9 @@ library
   exposed-modules:
       Io
       Lib
+      ParserJSON
       Stack
+      StateFile
   other-modules:
       Paths_Haskelled
   hs-source-dirs:
