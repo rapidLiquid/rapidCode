@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 64b2b749201e43cabede59e38abd6cbdefd1d06c98adae63fe2038252cb23f96
+-- hash: c05bb1344cdb3a39adfe5f2b11ae2be22c17b2fb8e8697e8ef262e94f7bdd5cc
 
 name:           Haskelled
 version:        0.1.0.0
@@ -31,13 +31,15 @@ library
       Lib
       ParserJSON
       Stack
-      StateFile
+      Trans
   other-modules:
       Paths_Haskelled
   hs-source-dirs:
       src
   build-depends:
       base >=4.7 && <5
+    , containers
+    , text
   default-language: Haskell2010
 
 executable Haskelled-exe
@@ -50,6 +52,8 @@ executable Haskelled-exe
   build-depends:
       Haskelled
     , base >=4.7 && <5
+    , containers
+    , text
   default-language: Haskell2010
 
 test-suite Haskelled-test
@@ -63,4 +67,6 @@ test-suite Haskelled-test
   build-depends:
       Haskelled
     , base >=4.7 && <5
+    , containers
+    , text
   default-language: Haskell2010
